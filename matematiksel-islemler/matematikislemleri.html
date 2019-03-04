@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Matematik Islemleri</title>
+     <link rel="stylesheet" type="text/css" href="css.css">
+  </head>
+  <body>
+
+
+  <script type="text/javascript">
+
+  function topla( ){
+  let a = Number(document.getElementById("v1").value);
+  let b = Number(document.getElementById("v2").value);
+  document.getElementById("sonuc1").innerHTML =  a+b;
+  }
+
+  function cikart(){
+    let a = Number(document.getElementById("v3").value);
+    let b = Number(document.getElementById("v4").value);
+    document.getElementById("sonuc2").innerHTML =  a-b;
+  }
+  function carp() {
+    let a = Number(document.getElementById("v5").value);
+    let b = Number(document.getElementById("v6").value);
+    document.getElementById("sonuc3").innerHTML =  a*b;
+  }
+
+  function bol(){
+    let a = Number(document.getElementById("v7").value);
+    let b = Number(document.getElementById("v8").value);
+    document.getElementById("sonuc4").innerHTML =  a/b;
+  }
+
+  function kuvvet(){
+    let a = Number(document.getElementById("v9").value);
+    let b = Number(document.getElementById("v10").value);
+    document.getElementById("sonuc5").innerHTML =  Math.pow(a,b);
+  }
+
+  function karekok(){
+    let a = Number(document.getElementById("v11").value);
+    document.getElementById("sonuc6").innerHTML =  Math.sqrt(a);
+  }
+
+  function hipotenus(){
+    let a = Number(document.getElementById("v12").value);
+    let b = Number(document.getElementById("v13").value);
+    document.getElementById("sonuc7").innerHTML =  Math.sqrt(a*a+b*b);
+  }
+
+  function asal(){
+    let a = Number(document.getElementById("v14").value);
+    if(a <= 1){
+      document.getElementById("sonuc8").innerHTML ="asal degil";
+    } else if(a ==2){
+      document.getElementById("sonuc8").innerHTML="asal";
+    } else {
+      for(let i=2;i<a;i++){
+        if(a%i==0){
+          document.getElementById("sonuc8").innerHTML="asal degil";
+          break;
+        }else {
+          document.getElementById("sonuc8").innerHTML="asal";
+        }
+      }
+    }
+  }
+
+  function faktoriyel(){
+    let a = Number(document.getElementById("v15").value);
+    let tmp =1;
+    for(let i=a;i>1;i--){
+      tmp=tmp*i;
+    }
+    document.getElementById("sonuc9").innerHTML=tmp;
+  }
+
+function armstrong(){
+  let a = Number(document.getElementById('v16').value);
+  let b =a;
+  if(a>999) document.getElementById('sonuc10').innerHTML='uc basamaktan fazla ';
+  else {
+    let bir = a%10;
+    a=a-bir;
+    let iki = (a%100)/10;
+    a=a-(iki*10);
+    let uc = a/100;
+
+    if( Math.pow(bir,3)+Math.pow(iki,3)+Math.pow(uc,3)==b)
+    document.getElementById('sonuc10').innerHTML = "armstrong";
+    else document.getElementById('sonuc10').innerHTML ="armstrong degil";
+  }
+  }
+
+function mod() {
+ let a = Number(document.getElementById('v17').value);
+  let b = Number(document.getElementById('v18').value);
+ document.getElementById('sonuc11').innerHTML=a%b;
+}
+
+function ricardomilos(x){
+  x.style.fontSize = "80px";
+  x.innerHTML = "RICARDO MILOS";
+  x.className = "rainbow";
+  audio = new Audio();
+     audio.src = "ayaya.mp3";
+     audio.loop = true;
+     audio.play();
+
+
+}
+
+setTimeout(function() { getName(); }, 50000);
+function getName() {
+  window.prompt("Uzun suredir buradasin adini soyle bakalim","benim adim cafer xd");
+}
+
+
+  </script>
+<div id ="sucuk">
+<h3 onmouseover="ricardomilos(this)">JS Matematik Islemleri</h3>
+</div>
+
+<div class="yumurta">
+<input id="v1" placeholder="birinci sayi" type="text" name="" value="">
+<input id="v2" placeholder="ikinci sayi" type="text" name="" value="">
+<button type="button" onclick="topla()" name="button">topla</button>
+<a id="sonuc1"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v3" placeholder="birinci sayi" type="text" name="" value="">
+<input id="v4" placeholder="ikinci sayi" type="text" name="" value="">
+<button type="button" onclick="cikart()" name="button">cikart</button>
+<a id="sonuc2"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v5" placeholder="birinci sayi" type="text" name="" value="">
+<input id="v6" placeholder="ikinci sayi" type="text" name="" value="">
+<button type="button" onclick="carp()" name="button">carp</button>
+<a id="sonuc3"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v7" placeholder="birinci sayi" type="text" name="" value="">
+<input id="v8" placeholder="ikinci sayi" type="text" name="" value="">
+<button type="button" onclick="bol()" name="button">bol</button>
+<a id="sonuc4"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v9" placeholder="sayi" type="text" name="" value="">
+<input id="v10" placeholder="kuvvet" type="text" name="" value="">
+<button type="button" onclick="kuvvet()" name="button">kuvvet</button>
+<a id="sonuc5"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v11" placeholder="sayi" type="text" name="" value="">
+<button type="button" onclick="karekok()" name="button">karekok</button>
+<a id="sonuc6"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v12" placeholder="birinci kenar" type="text" name="" value="">
+<input id="v13" placeholder="ikinci kenar" type="text" name="" value="">
+<button type="button" onclick="hipotenus()" name="button">hipotenus</button>
+<a id="sonuc7"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v14" placeholder="sayi" type="text" name="" value="">
+<button type="button" onclick="asal()" name="button">asal</button>
+<a id="sonuc8"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v15" placeholder="sayi" type="text" name="" value="">
+<button type="button" onclick="faktoriyel()" name="button">faktoriyel</button>
+<a id="sonuc9"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v16" placeholder="sayi" type="text" name="" value="">
+<button type="button" onclick="armstrong()" name="button">armstrong</button>
+<a id="sonuc10"></a>
+</div>
+<br><br><br>
+<div class="yumurta">
+<input id="v17" placeholder="birinci sayi" type="text" name="" value="">
+<input id="v18" placeholder="ikinci sayi" type="text" name="" value="">
+<button type="button" onclick="mod()" name="button">mod</button>
+<a id="sonuc11"></a>
+
+
+
+  </body>
+</html>
