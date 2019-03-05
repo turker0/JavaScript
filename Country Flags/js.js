@@ -107,7 +107,7 @@ function choose(ans) {
 }
 
 function score(){
-  document.getElementById("score").innerHTML = "Puan : " + puan.toString();
+  document.getElementById("score").innerHTML = "Score : " + puan.toString();
 }
 
 function attention(){
