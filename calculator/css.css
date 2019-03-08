@@ -1,0 +1,140 @@
+
+.background{
+    margin: auto;
+    width: 50%;
+    height: 640px;
+    margin-top: 100px;
+    position: relative;
+    border: 12px outset;
+    border-radius: 40px;
+    font-weight: 100px;
+
+}
+
+.input{
+    width: 80%;
+    height: 20%;
+    margin:auto;
+    border-bottom: 2px double;
+    margin-bottom: 3%;
+    font-size: 100px;
+    text-align: right;
+    font-weight: 300;
+
+
+}
+
+.buton{
+    width: 20%;
+    height: 10%;
+    margin: 20px;
+    text-decoration: none;
+    background-color: #dddddd;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+.buton:active{
+    background-color: #A0D6FF;
+}
+
+.reminder{
+    font-size: 55px;
+    font-weight: 300;
+    width: 50px;
+    height: 10px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.information{
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.author{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    
+}
+
+/* WINDOWS ALERT https://codepen.io/skazee/pen/xVvWdq */
+#modalContainer {
+	background-color:rgba(0, 0, 0, 0.3);
+	position:absolute;
+  top:0;
+	width:100%;
+	height:100%;
+	left:0px;
+	z-index:10000;
+}
+
+#alertBox {
+	position:relative;
+	width:33%;
+	min-height:500px;
+    max-height:1000px;
+	margin-top:50px;
+	border:1px solid #000000;
+	background-color:#fff;
+	background-repeat:no-repeat;
+    top:13%;
+}
+
+#modalContainer > #alertBox {
+	position:fixed;
+}
+
+#alertBox h1 {
+	margin:0;
+    font:bold 1em Raleway,arial;
+    font-weight: 200;
+    font-size: 20px;
+	background-color:#000000;
+	color:#FFF;
+	border-bottom:1px solid #000000;
+    padding:10px 0 10px 5px;
+    text-align: center;
+}
+
+#alertBox p {
+height:50px;
+padding-left:5px;
+padding-top:5px;
+text-align:center;
+vertical-align:middle;
+
+}
+
+#alertBox #closeBtn {
+	display:block;
+    position:relative;
+    margin: auto;
+    margin-top: 58%;
+    margin-bottom: 10px;
+	padding:7px;
+	border:0 none;
+	width:70px;
+	text-align:center;
+	color:#FFF;
+	background-color:#000000;
+	border-radius: 0px;
+	text-decoration:none;
+    outline:0!important;
+}
+
+@media (max-width: 600px) 
+{
+  #alertBox {
+	position:relative;
+	width:90%;
+  top:30%;
+}
+}
