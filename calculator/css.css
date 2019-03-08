@@ -27,7 +27,8 @@
 .buton{
     width: 20%;
     height: 10%;
-    margin: 20px;
+    margin: 2%;
+    float: left;
     text-decoration: none;
     background-color: #dddddd;
     border-radius: 5px;
