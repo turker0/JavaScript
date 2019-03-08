@@ -1,2 +1,1 @@
 # JavaScript
-JavaScript Matematik Islemleri
